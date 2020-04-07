@@ -1,0 +1,30 @@
+<html>
+    <head>
+
+    <script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    </head>
+  <body>
+    <h1>Fractal Ideas</h1>
+
+    <form id="newIdeaForm"><input id="ideaToAdd"><button>Add</button></form>
+    <ul id="ideaSetList"></ul>
+
+    <div>Focused:</div>
+    <button id="test" onclick="testId(this)">test if ids go through</button>
+    <div id='focused'></div>
+
+
+    <script src="./gunFunctions.js"></script>
+
+    <style>
+        body {background: midnightblue;color:springgreen;}
+        ul { padding: 0; }
+        li { display: flex; }
+        li span { width: 150px; word-break: break-all; }
+        img { height: 20px; margin-left: 8px; cursor: pointer; }
+        input { width: 150px; margin-right: 8px; }
+        input[type='checkbox'] { width: auto; }
+    </style>
+  </body>
+</html>
